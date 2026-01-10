@@ -1,0 +1,92 @@
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-[#e6c37a] font-sans">
+      {/* NAVBAR */}
+      <header className="flex justify-between items-center px-10 py-6 border-b border-[#e6c37a]/30">
+        <div className="text-4xl font-extrabold tracking-widest">JSH</div>
+        <nav className="hidden md:flex gap-8 text-sm uppercase">
+          <a href="#about" className="hover:text-white">About</a>
+          <a href="#services" className="hover:text-white">Services</a>
+          <a href="#onboarding" className="hover:text-white">Onboarding</a>
+          <a href="#contact" className="hover:text-white">Contact</a>
+        </nav>
+      </header>
+
+      {/* HERO */}
+      <section className="relative h-[85vh] flex items-center px-12">
+        <Image
+          src="/hero-trucks.png"
+          alt="Trucking Dispatch"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/65" />
+        <div className="relative max-w-2xl">
+          <h1 className="text-5xl font-bold leading-tight">
+            Reliable Truck <br /> Dispatch Services
+          </h1>
+          <p className="mt-6 text-lg text-gray-200">
+            Professional dispatch solutions built around drivers, routes, and results.
+          </p>
+          <a
+            href="#onboarding"
+            className="inline-block mt-8 bg-[#e6c37a] text-black px-8 py-3 rounded-xl font-semibold"
+          >
+            Get Started
+          </a>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section id="about" className="px-12 py-20 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-6">About JSH Dispatch Inc</h2>
+        <p className="text-gray-300 leading-relaxed">
+          JSH Dispatch Inc provides professional truck dispatch services for owner-operators and small fleets.
+          With years of industry experience, we take the time to understand how you want to run and build
+          dispatch strategies that support your goals.
+        </p>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services" className="px-12 py-20 bg-[#0e0e0e]">
+        <h2 className="text-3xl font-semibold mb-10 text-center">Our Services</h2>
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {["Load Searching & Booking","Rate Negotiation","Route Planning","Roadside Assistance Support","Invoice Submission (Invoice Factory)","24/7 Dispatcher Support"].map(service => (
+            <div key={service} className="border border-[#e6c37a]/30 rounded-2xl p-6 text-center">
+              {service}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ONBOARDING */}
+      <section id="onboarding" className="px-12 py-20 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-6">Carrier Onboarding</h2>
+        <p className="text-gray-300 mb-6">
+          Our onboarding process is fast, secure, and completed electronically through DocuSign.
+        </p>
+        <a
+          href="https://forms.gle/YOUR_FORM_LINK"
+          className="bg-[#e6c37a] text-black px-8 py-3 rounded-xl font-semibold"
+        >
+          Start Carrier Intake
+        </a>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="px-12 py-20 bg-[#0e0e0e]">
+        <h2 className="text-3xl font-semibold mb-6">Contact Us</h2>
+        <p className="text-gray-300">Josue Sandoval</p>
+        <p className="text-gray-300">Phone: 956-615-6572</p>
+        <p className="text-gray-300">Email: jshdispatchinc@gmail.com</p>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="text-center py-8 text-gray-400 text-sm">
+        © {new Date().getFullYear()} JSH Dispatch Inc. All Rights Reserved.
+      </footer>
+    </main>
+  );
+}
