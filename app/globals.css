@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Page container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* HERO */
+.hero {
+  background-image: url("/hero-trucks.png");
+  background-size: cover;
+  background-position: center;
+  padding: 140px 60px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: linear-gradient(180deg, #d4af37, #a8842c);
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* SECTION */
+.section {
+  background-color: #141414;
+  border-top: 1px solid #2a2a2a;
+}
