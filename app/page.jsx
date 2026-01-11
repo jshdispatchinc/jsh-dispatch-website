@@ -1,30 +1,24 @@
 export default function Home() {
   return (
-    <main>
-      {/* HERO */}
+    <>
+      <nav className="navbar">
+        <h2>JSH Dispatch</h2>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+
       <section className="hero">
         <h1>Trucking Dispatch Services</h1>
         <p>
-          Reliable dispatch solutions built around owner-operators and small
-          fleets. We work directly with drivers to maximize rates and efficiency.
+          Reliable dispatch solutions for owner-operators and small fleets.
+          We negotiate better rates, plan routes, and keep you moving.
         </p>
-        <a href="#contact" className="btn">
-          Get Started
-        </a>
+        <a href="#" className="button">Get Started</a>
       </section>
-
-      {/* ABOUT */}
-      <section className="section">
-        <div className="container">
-          <h2>About Us</h2>
-          <p>
-            JSH Dispatch Inc has over 10 years of experience in the trucking
-            industry. We work closely with owner-operators and small fleets to
-            provide personalized dispatch services based on how and where you
-            want to run.
-          </p>
-        </div>
-      </section>
-    </main>
+    </>
   );
 }
