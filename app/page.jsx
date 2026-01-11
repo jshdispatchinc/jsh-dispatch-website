@@ -1,25 +1,51 @@
 export default function Home() {
   return (
-    <>
-      <nav className="navbar">
-        <h2>JSH Dispatch</h2>
-        <div>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-        </div>
-      </nav>
+    <main>
+      {/* HERO SECTION */}
+      <section
+        className="hero"
+        style={{
+          backgroundImage: "url('/hero-trucks.png')",
+        }}
+      >
+        <div className="container">
+          <h1
+            style={{
+              fontSize: "64px",
+              color: "#d4af37",
+              marginBottom: "20px",
+            }}
+          >
+            Trucking Dispatch Services
+          </h1>
 
-      <section className="hero">
-        <h1>Trucking Dispatch Services</h1>
-        <p>
-          Reliable dispatch solutions for owner-operators and small fleets.
-          We negotiate better rates, plan routes, and keep you moving.
-        </p>
-        <a href="#" className="button">Get Started</a>
+          <p
+            style={{
+              maxWidth: "600px",
+              fontSize: "18px",
+              lineHeight: "1.6",
+            }}
+          >
+            Professional dispatch solutions built for owner-operators and small
+            fleets. We help you secure better lanes, higher rates, and consistent
+            work.
+          </p>
+
+          <button
+            style={{
+              marginTop: "30px",
+              padding: "14px 32px",
+              backgroundColor: "#d4af37",
+              color: "#000",
+              fontSize: "16px",
+              fontWeight: "bold",
+              borderRadius: "4px",
+            }}
+          >
+            GET STARTED
+          </button>
+        </div>
       </section>
-    </>
+    </main>
   );
 }
-// force redeploy
