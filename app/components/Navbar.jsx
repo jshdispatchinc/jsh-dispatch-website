@@ -4,46 +4,38 @@ export default function Navbar() {
       style={{
         position: "fixed",
         top: 0,
-        left: 0,
         width: "100%",
-        height: "70px",
-        backgroundColor: "#222",
         zIndex: 1000,
+        background: "linear-gradient(90deg, #1a1a1a, #000)",
+        borderBottom: "1px solid #2a2a2a",
       }}
     >
       <div
         style={{
           maxWidth: "1200px",
-          height: "100%",
           margin: "0 auto",
-          padding: "0 20px",
+          padding: "18px 30px",
           display: "flex",
-          alignItems: "center",
           justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
-        {/* LOGO */}
         <div
           style={{
-            color: "#f5b301",
-            fontSize: "20px",
+            fontSize: "22px",
             fontWeight: "bold",
+            color: "#d4af37",
+            letterSpacing: "1px",
           }}
         >
-          JSH Dispatch
+          JSH DISPATCH
         </div>
 
-        {/* LINKS */}
-        <div
-          style={{
-            display: "flex",
-            gap: "25px",
-            fontSize: "15px",
-          }}
-        >
-          <a href="#about" style={linkStyle}>About</a>
-          <a href="#services" style={linkStyle}>Services</a>
-          <a href="#contact" style={linkStyle}>Contact</a>
+        <div style={{ display: "flex", gap: "28px", fontSize: "15px" }}>
+          <a style={linkStyle} href="#">HOME</a>
+          <a style={linkStyle} href="#about">ABOUT</a>
+          <a style={linkStyle} href="#services">SERVICES</a>
+          <a style={linkStyle} href="#contact">CONTACT</a>
         </div>
       </div>
     </nav>
@@ -51,7 +43,7 @@ export default function Navbar() {
 }
 
 const linkStyle = {
-  color: "#fff",
+  color: "#e6e6e6",
   textDecoration: "none",
+  fontWeight: "500",
 };
-
