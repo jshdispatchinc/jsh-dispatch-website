@@ -1,40 +1,57 @@
-"use client";
-
 export default function Navbar() {
   return (
-<nav
-  style={{
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    background: "rgba(0,0,0,0.85)",
-    height: "70px",
-    display: "flex",
-    alignItems: "center",
-    zIndex: 1000,
-  }}
->
-  <div
-    style={{
-      maxWidth: "1200px",
-      margin: "0 auto",
-      width: "100%",
-      padding: "0 20px",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-    }}
-  >
-      <strong style={{ color: "#f5c542", fontSize: "20px" }}>
-        JSH Dispatch
-      </strong>
+    <nav
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "70px",
+        backgroundColor: "#222",
+        zIndex: 1000,
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "1200px",
+          height: "100%",
+          margin: "0 auto",
+          padding: "0 20px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        {/* LOGO */}
+        <div
+          style={{
+            color: "#f5b301",
+            fontSize: "20px",
+            fontWeight: "bold",
+          }}
+        >
+          JSH Dispatch
+        </div>
 
-      <div style={{ display: "flex", gap: "20px" }}>
-        <a href="#about" style={{ color: "white" }}>About</a>
-        <a href="#services" style={{ color: "white" }}>Services</a>
-        <a href="#contact" style={{ color: "white" }}>Contact</a>
+        {/* LINKS */}
+        <div
+          style={{
+            display: "flex",
+            gap: "25px",
+            fontSize: "15px",
+          }}
+        >
+          <a href="#about" style={linkStyle}>About</a>
+          <a href="#services" style={linkStyle}>Services</a>
+          <a href="#contact" style={linkStyle}>Contact</a>
+        </div>
       </div>
     </nav>
   );
 }
+
+const linkStyle = {
+  color: "#fff",
+  textDecoration: "none",
+};
+
