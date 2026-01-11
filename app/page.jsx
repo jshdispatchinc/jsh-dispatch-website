@@ -7,18 +7,170 @@ export default function Home() {
 
       <main style={{ marginTop: "90px" }}>
         {/* HERO */}
+ <section
+  id="about"
+  style={{
+    padding: "80px 20px",
+    borderTop: "1px solid rgba(201,162,77,0.3)",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "40px",
+      alignItems: "center",
+    }}
+  >
+    <div>
+      <h2 style={{ color: "#c9a24d" }}>ABOUT US</h2>
+      <p>
+        JSH Dispatch Inc has over 10 years of experience in the trucking industry.
+        We work closely with owner-operators and small fleets to deliver
+        personalized dispatch services.
+      </p>
+
+      <a
+        href="#contact"
+        style={{
+          display: "inline-block",
+          marginTop: "20px",
+          padding: "12px 26px",
+          border: "1px solid #c9a24d",
+          color: "#c9a24d",
+          textDecoration: "none",
+        }}
+      >
+        GET STARTED / Carrier Intake
+      </a>
+    </div>
+
+    <img
+      src="/hero-trucks.png"
+      alt="Truck"
+      style={{ width: "100%", borderRadius: "6px" }}
+    />
+  </div>
+</section>
+<footer
+  style={{
+    padding: "50px 20px",
+    backgroundColor: "#0b0b0b",
+    borderTop: "1px solid rgba(201,162,77,0.3)",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+      gap: "30px",
+    }}
+  >
+    <div>
+      <h4 style={{ color: "#c9a24d" }}>RESOURCES</h4>
+      <p>Dispatch Agreement</p>
+      <p>Fee Addendum</p>
+      <p>Terms of Service</p>
+    </div>
+
+    <div>
+      <h4 style={{ color: "#c9a24d" }}>CONTACT</h4>
+      <p>📞 956-615-6572</p>
+      <p>📧 jshdispatchinc@gmail.com</p>
+    </div>
+  </div>
+</footer>
+        <section style={{ padding: "80px 20px" }}>
+  <h2
+    style={{
+      textAlign: "center",
+      color: "#c9a24d",
+      letterSpacing: "2px",
+      marginBottom: "50px",
+    }}
+  >
+    WHAT WE OFFER
+  </h2>
+
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+      gap: "25px",
+    }}
+  >
+    {[
+      "Find & Book Loads",
+      "Negotiate Best Rates",
+      "Route Planning",
+      "Roadside Assistance",
+      "Invoice & Factoring",
+      "24/7 Dispatch Support",
+    ].map((item) => (
+      <div
+        key={item}
+        style={{
+          padding: "30px",
+          border: "1px solid rgba(201,162,77,0.4)",
+          background: "linear-gradient(145deg, #1a1208, #0f0f0f)",
+          textAlign: "center",
+          boxShadow: "0 0 20px rgba(0,0,0,0.6)",
+        }}
+      >
+        <h3 style={{ color: "#c9a24d" }}>{item}</h3>
+      </div>
+    ))}
+  </div>
+</section>
         <section
-          style={{
-            height: "90vh",
-            backgroundImage: "url('/hero-trucks.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            display: "flex",
-            alignItems: "center",
-            padding: "40px",
-            color: "white",
-          }}
-        >
+  style={{
+    backgroundImage: "url('/hero-trucks.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: "120px 20px",
+    borderBottom: "1px solid rgba(201,162,77,0.3)",
+  }}
+>
+  <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+    <h1
+      style={{
+        fontSize: "52px",
+        color: "#c9a24d",
+        textTransform: "uppercase",
+        letterSpacing: "2px",
+        marginBottom: "20px",
+      }}
+    >
+      Trucking Dispatch Services
+    </h1>
+
+    <p style={{ maxWidth: "600px", fontSize: "18px", marginBottom: "30px" }}>
+      Reliable dispatch solutions built around owner-operators and small fleets.
+      We maximize rates, miles, and efficiency.
+    </p>
+
+    <a
+      href="#contact"
+      style={{
+        padding: "14px 28px",
+        backgroundColor: "#c9a24d",
+        color: "#000",
+        fontWeight: "bold",
+        textDecoration: "none",
+        borderRadius: "4px",
+        boxShadow: "0 0 15px rgba(201,162,77,0.6)",
+      }}
+    >
+      GET STARTED
+    </a>
+  </div>
+</section>
           <div style={{ maxWidth: "600px" }}>
             <h1 style={{ fontSize: "48px", color: "#f5c542" }}>
               Trucking Dispatch Services
