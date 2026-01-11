@@ -1,5 +1,6 @@
 export const metadata = {
-  title: "JSH Dispatch Services",
+  title: "JSH Dispatch",
+  description: "Professional Truck Dispatch Services",
 };
 
 export default function RootLayout({ children }) {
@@ -8,9 +9,9 @@ export default function RootLayout({ children }) {
       <body
         style={{
           margin: 0,
+          paddingTop: "70px", // 👈 THIS FIXES NAVBAR OVERLAP
           fontFamily: "Arial, sans-serif",
-          backgroundColor: "#fff",
-          color: "#111",
+          overflowX: "hidden", // 👈 PREVENTS SIDE SCROLL
         }}
       >
         {children}
